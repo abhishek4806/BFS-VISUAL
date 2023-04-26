@@ -2,8 +2,7 @@
 **  A visual representation of BFS for shortest path problem         **
 **  implemented using a grid.                                        **
 **  For graphics, WinBGIm is used which is NOT cross-platform        **
-***********************************************************************
-/*  Name: Jatin Saini                                                **                                                                    **
+***********************************************************************                                                                  **
 /**********************************************************************/
 
 #include<graphics.h>
@@ -226,17 +225,17 @@ int BFS( int **grid, point source, point target, point origin, point **parentRec
     while (!isEmpty(front))
     {
         /////////////////////////////////////////////////////////////////////////////////////////////////
-        /* this code is used when we want each level of graph/grid to be colored differently *
-        if(tot_count == 0)
-        {
-            tot_count = count;
-            count = 0;
-            fillcolor = (fillcolor + 1)%getmaxcolor();
-            if(fillcolor == BLACK || fillcolor == GREEN || fillcolor == RED || fillcolor == WHITE)
-                fillcolor = (fillcolor + 1)%getmaxcolor();
-        }
-        tot_count--;
-        *//////////////////////////////////////////////////////////////////////////////////////////////////
+        // this code is used when we want each level of graph/grid to be colored differently *
+        // if(tot_count == 0)
+        // {
+        //     tot_count = count;
+        //     count = 0;
+        //     fillcolor = (fillcolor + 1)%getmaxcolor();
+        //     if(fillcolor == BLACK || fillcolor == GREEN || fillcolor == RED || fillcolor == WHITE)
+        //         fillcolor = (fillcolor + 1)%getmaxcolor();
+        // }
+        // tot_count--;
+        /////////////////////////////////////////////////////////////////////////////////////////////////
 
 
         point curr_pt = front->pt;
